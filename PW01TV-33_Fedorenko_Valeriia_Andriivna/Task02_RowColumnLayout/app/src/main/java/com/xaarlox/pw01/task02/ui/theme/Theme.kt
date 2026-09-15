@@ -1,6 +1,5 @@
 package com.xaarlox.pw01.task02.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -9,35 +8,61 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = SunOrangeDark,
+    onPrimary = Color(0xFF4A2100),
+    primaryContainer = Color(0xFF6D3200),
+    onPrimaryContainer = Color(0xFFFFDCC2),
+
+    secondary = GoldenYellowDark,
+    onSecondary = Color(0xFF3E2E00),
+
+    tertiary = SunsetBrownDark,
+    onTertiary = Color(0xFF4A1500),
+
+    background = DarkWarmBackground,
+    onBackground = WarmOnDarkSurface,
+
+    surface = DarkWarmSurface,
+    onSurface = WarmOnDarkSurface,
+    surfaceVariant = Color(0xFF4A3527),
+    onSurfaceVariant = Color(0xFFE8C4A0),
+
+    outline = WarmOutlineDark
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
+    primary = SunOrange,
+    onPrimary = WarmOnPrimary,
+    primaryContainer = SunOrangeLight,
+    onPrimaryContainer = Color(0xFF3E1400),
 
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
-    onPrimary = Color.White,
-    onSecondary = Color.White,
+    secondary = GoldenYellow,
+    onSecondary = Color(0xFF3E2E00),
+    secondaryContainer = GoldenYellowLight,
+    onSecondaryContainer = Color(0xFF4A3800),
+
+    tertiary = SunsetBrown,
     onTertiary = Color.White,
-    onBackground = Color(0xFF1C1B1F),
-    onSurface = Color(0xFF1C1B1F),
-    */
+
+    background = CreamBackground,
+    onBackground = WarmOnSurface,
+
+    surface = CreamSurface,
+    onSurface = WarmOnSurface,
+    surfaceVariant = Color(0xFFFFE0B2),
+    onSurfaceVariant = Color(0xFF5D4037),
+
+    outline = WarmOutline
 )
 
 @Composable
-fun RowColumnLayoutTheme(
+fun EcoGridTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
