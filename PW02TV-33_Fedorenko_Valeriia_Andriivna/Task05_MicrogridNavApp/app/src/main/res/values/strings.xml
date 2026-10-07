@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Task05_MicrogridNavApp</string>
+    <string name="main_menu_title">Головне меню</string>
+    <string name="current_user">Поточний користувач: %1$s</string>
+    <string name="current_email">Пошта: %1$s</string>
+    <string name="menu_user_info">Інформація про користувача</string>
+    <string name="menu_forecast">Прогноз потужності СЕС</string>
+
+    <string name="profile_title">Налаштування профілю</string>
+    <string name="name_label">Ваше ім\'я</string>
+    <string name="email_label">Електронна пошта</string>
+    <string name="email_error">Некоректна адреса електронної пошти</string>
+    <string name="save_and_back">Зберегти та повернутися</string>
+
+    <string name="greeting">Привіт, %1$s!</string>
+    <string name="forecast_subtitle">Прогноз потужності Сонячної електростанції</string>
+    <string name="panels_label">Кількість панелей</string>
+    <string name="panels_error">Введіть додатне число</string>
+    <string name="calculate_button">Розрахувати потужність</string>
+
+    <string name="details_title">Деталі прогнозу</string>
+    <string name="panels_count_label">Кількість панелей</string>
+    <string name="expected_power_label">Очікувана потужність</string>
+    <string name="power_value">%1$s кВт</string>
+    <string name="back_to_forecast">Повернутися до прогнозу</string>
+    <string name="back_to_menu">Повернутися в меню</string>
 </resources>
