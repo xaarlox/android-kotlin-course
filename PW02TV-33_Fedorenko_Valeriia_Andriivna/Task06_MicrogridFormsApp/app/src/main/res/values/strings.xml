@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">Task06_MicrogridFormsApp</string>
+    <string name="registration_title">Реєстрація сонячної електростанції</string>
+    <string name="registration_title_wind">Реєстрація вітрової електростанції</string>
+
+    <string name="source_type_title">Тип джерела енергії</string>
+    <string name="source_solar">Сонячна</string>
+    <string name="source_wind">Вітрова</string>
+
+    <string name="field_name">Назва станції</string>
+    <string name="field_email">Email оператора</string>
+    <string name="field_password">Пароль</string>
+    <string name="field_power">Потужність станції (кВт)</string>
+
+    <string name="hint_name">Введіть офіційну назву вашої СЕС</string>
+    <string name="hint_name_wind">Введіть офіційну назву вашої ВЕС</string>
+    <string name="hint_email">Формат: example@mail.com</string>
+    <string name="hint_password">Мін. 8 символів, велика літера та цифра</string>
+    <string name="hint_power">Наприклад: 5000</string>
+    <string name="hint_power_wind">Наприклад: 2500</string>
+
+    <string name="error_empty">Поле не може бути порожнім</string>
+    <string name="error_invalid_email">Некоректний email</string>
+    <string name="error_email_taken">Цей email уже зареєстровано</string>
+    <string name="error_weak_password">Пароль має містити мінімум 8 символів, велику літеру та цифру</string>
+    <string name="error_invalid_power">Введіть число більше 0</string>
+
+    <string name="register_button">Зареєструвати</string>
+    <string name="registration_success">Станція успішно зареєстрована та перевірена!</string>
 </resources>
