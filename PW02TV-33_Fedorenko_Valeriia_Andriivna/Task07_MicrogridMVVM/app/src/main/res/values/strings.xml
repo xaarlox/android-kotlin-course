@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Task07_MicrogridMVVM</string>
+    <string name="dashboard_title">Моніторинг мікрогріду</string>
+
+    <string name="source_solar_title">Прогноз потужності сонячної станції</string>
+    <string name="source_wind_title">Прогноз потужності вітрової станції</string>
+
+    <string name="current_power">Поточна потужність: %1$d кВт</string>
+    <string name="status_label">Статус: %1$s</string>
+    <string name="status_low">Низька потужність</string>
+    <string name="status_normal">Норма</string>
+    <string name="status_high">Висока потужність</string>
+
+    <string name="loading">Завантаження даних...</string>
+    <string name="load_error">Не вдалося отримати дані</string>
+    <string name="refresh_button">Оновити потужність</string>
+    <string name="retry_button">Повторити</string>
+    <string name="refresh_all_button">Оновити все</string>
+
+    <string name="summary_title">Загальний стан мікрогріду</string>
+    <string name="summary_pending">Розрахунок...</string>
+    <string name="summary_unavailable">Дані недоступні</string>
+    <string name="summary_partial">Часткові дані: %1$d кВт (одне з джерел недоступне)</string>
+    <string name="summary_total">Сумарна генерація: %1$d кВт</string>
 </resources>
