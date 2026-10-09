@@ -1,3 +1,53 @@
 <resources>
     <string name="app_name">Task08_MicrogridRoom</string>
+    <string name="screen_title">Станції мікрогріду</string>
+
+    <string name="form_title">Нова станція</string>
+    <string name="field_name">Назва станції</string>
+    <string name="field_powers">Потужності, Вт (через кому)</string>
+    <string name="field_voltages">Напруги, В (через кому)</string>
+    <string name="hint_name">Введіть унікальну назву</string>
+    <string name="hint_numbers">Наприклад: 5.0, 2.0, 3.5</string>
+    <string name="add_button">Додати станцію з даними</string>
+
+    <string name="error_name_empty">Введіть назву станції</string>
+    <string name="error_numbers">Введіть невід\'ємні числа через кому (десяткові через крапку)</string>
+    <string name="error_duplicate">Станція з такою назвою вже існує</string>
+
+    <string name="sync_button">Синхронізувати з сервером</string>
+    <string name="sync_syncing">Синхронізація...</string>
+    <string name="sync_up_to_date">Дані актуальні</string>
+    <string name="sync_synced">Завантажено нових станцій: %1$d</string>
+    <string name="sync_failed">Не вдалося синхронізувати. Показано збережені дані.</string>
+
+    <string name="stats_title">Зведення по мікрогріду</string>
+    <string name="stats_empty">Станцій ще немає</string>
+    <string name="stats_count">Станцій: %1$d</string>
+    <string name="stats_power">Сумарна середня потужність: %1$s Вт</string>
+    <string name="stats_voltage">Середня напруга: %1$s В</string>
+    <string name="stats_peak">Найпотужніша станція: %1$s</string>
+
+    <string name="search_label">Пошук за назвою</string>
+    <string name="filter_all">Усі</string>
+    <string name="filter_low">Низька потужність</string>
+    <string name="filter_high">Висока потужність</string>
+    <string name="sort_label">Сортування: %1$s</string>
+    <string name="sort_name">за назвою</string>
+    <string name="sort_power">за потужністю</string>
+    <string name="sort_voltage">за напругою</string>
+    <string name="sort_newest">спочатку нові</string>
+
+    <string name="list_title">Список станцій (%1$d з %2$d)</string>
+    <string name="list_empty">Станцій ще немає</string>
+    <string name="list_empty_filtered">Нічого не знайдено за вашим запитом</string>
+    <string name="loading">Завантаження...</string>
+
+    <string name="card_avg_power">Середня потужність: %1$s Вт</string>
+    <string name="card_max_power">Максимум: %1$s Вт</string>
+    <string name="card_avg_voltage">Середня напруга: %1$s В</string>
+    <string name="card_powers">Потужності: %1$s Вт</string>
+    <string name="card_voltages">Напруги: %1$s В</string>
+    <string name="level_high">Рівень: висока потужність</string>
+    <string name="level_low">Рівень: низька потужність</string>
+    <string name="delete_button">Видалити</string>
 </resources>
