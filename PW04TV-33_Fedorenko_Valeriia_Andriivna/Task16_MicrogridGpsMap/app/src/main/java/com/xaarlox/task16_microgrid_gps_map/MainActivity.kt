@@ -5,43 +5,29 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.xaarlox.task16_microgrid_gps_map.ui.theme.Task16_MicrogridGpsMapTheme
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.xaarlox.task16_microgrid_gps_map.ui.GpsMapScreen
+import com.xaarlox.task16_microgrid_gps_map.ui.GpsMapViewModel
+import com.xaarlox.task16_microgrid_gps_map.ui.theme.EcoGridTheme
+import com.xaarlox.task16_microgrid_gps_map.ui.theme.advancedScreenBackground
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            Task16_MicrogridGpsMapTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+            EcoGridTheme {
+                // AndroidViewModel is created by the default factory (it only needs the Application)
+                val viewModel: GpsMapViewModel = viewModel()
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = advancedScreenBackground()
+                ) {
+                    GpsMapScreen(viewModel)
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Task16_MicrogridGpsMapTheme {
-        Greeting("Android")
     }
 }
